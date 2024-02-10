@@ -150,40 +150,6 @@ ul li a {
   font-family: var(--poppins);
 }
 
-@media (max-width: 767.98px) {
-  .navbar {
-    position: relative;
-    background-color: var(--dark);
-    height: auto;
-  }
-
-  .nav-menu-btn {
-    display: block;
-  }
-
-  .navbar-btn {
-    display: none;
-  }
-
-  .navbar-links {
-    all: unset;
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    top: -60%;
-    left: 0;
-    background-color: var(--primary-color-dark);
-    z-index: -1;
-    transition: 0.3s;
-  }
-
-  .navbar-links-active {
-    top: 100%;
-  }
-}
 /*  hero section */
 
 .hero-section {
@@ -312,8 +278,8 @@ textarea {
 }
 
 .about-image {
-  /* width: 100%;
-  height: 100%; */
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -422,15 +388,6 @@ textarea {
   color: var(--heading-text);
 }
 
-/* @media (min-width: 991.98px){
-  .room-card {
-    margin-top: 4rem;
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr 1fr;
-  }
-} */
-
 /* service container  */
 
 .service {
@@ -494,20 +451,6 @@ textarea {
 .service-list li:nth-child(4) span {
   color: #fb7185;
   background-color: #ffe4e6;
-}
-
-@media (max-width: 767.98px) {
-  .service-container {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .service-list span {
-    font-size: 1.5rem;
-  }
-
-  .service-list li {
-    font-size: 1rem;
-  }
 }
 
 /* banner section  */
@@ -657,4 +600,67 @@ textarea {
   .footer__container {
     grid-template-columns: repeat(4, 1fr);
   }
+}
+
+@media (max-width: 767.98px) {
+  .service-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .service-list span {
+    font-size: 1.5rem;
+  }
+
+  .service-list li {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .navbar {
+    position: relative;
+    background-color: var(--dark);
+    height: auto;
+  }
+
+  .nav-menu-btn {
+    display: block;
+  }
+
+  .navbar-btn {
+    display: none;
+  }
+
+  .navbar-links {
+    all: unset;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: -60%;
+    left: 0;
+    background-color: var(--primary-color-dark);
+    z-index: -1;
+    transition: 0.3s;
+    background-color: var(--dark);
+  }
+
+  .navbar-links-active li {
+    padding: 20px 0;
+  }
+
+  .navbar-links-active {
+    top: 100%;
+  }
+}
+
+@media (min-width: 991.98px) {
+  /* .room-card {
+    margin-top: 4rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+  } */
 }
